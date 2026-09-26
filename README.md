@@ -1,5 +1,7 @@
 # 식단표
 
+사용 주소: https://ghdwnsvy1025.github.io/meal-planner/ (main에 푸시하면 GitHub Actions가 자동으로 배포)
+
 자주 먹는 조합을 템플릿으로 저장해 두고, 하루하루는 고르고 조정만 하는 개인용 식단표 PWA. 설계는 [DESIGN.md](DESIGN.md), 화면 디자인 노트는 [DESIGN-UI.md](DESIGN-UI.md)에 있습니다.
 
 ## 실행
@@ -19,7 +21,7 @@ npm run typecheck
 npm run build     # dist/ 에 PWA 빌드
 ```
 
-GitHub Pages 처럼 하위 경로에 올릴 때는 `BASE_PATH=/저장소이름/ npm run build` 로 빌드합니다.
+GitHub Pages 배포는 `.github/workflows/deploy.yml`이 맡습니다. 로컬에서 같은 빌드를 만들려면 `BASE_PATH=/meal-planner/ npm run build` 입니다.
 
 ## 식약처 데이터 갱신
 
